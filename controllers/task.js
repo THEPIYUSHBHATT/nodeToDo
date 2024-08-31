@@ -44,7 +44,7 @@ export const updateTask = async (req, res, next) => {
 
     res.status(201).json({
       success: true,
-      task,
+      message: 'task updated',
     })
   } catch (error) {
     next(error)
